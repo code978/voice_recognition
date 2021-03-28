@@ -118,7 +118,7 @@ class _SpeechScreenState extends State<SpeechScreen> {
   void _listen() async {
     if (!_isListening) {
       bool available = await _speech.initialize(
-        onStatus: (val) => print('onStatus onStatus onStatus: $val'),
+        onStatus: (val) => print('onStatus: $val'),
         onError: (val) => print('onError : $val'),
       );
       if (available) {
